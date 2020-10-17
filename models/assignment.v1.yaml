@@ -1,16 +1,20 @@
 title: assignment
 type: object
 description: Assign a role to a user
-properties:
-  username:
-    type: string
-  rolename:
-    type: string
-  expirydatetime:
-    type: string
-    format: date-time
 x-examples:
   'Assign DBA role to Jaques Clouseau until 2020-11-30 14:15:00':
     username: jclouseau
     rolename: dba
     expirydatetime: '2020-11-30T14:15:00Z'
+properties:
+  username:
+    $ref: ./user.v1.yaml
+  rolename:
+    $ref: ./role.v1.yaml
+  expirydatetime:
+    type: string
+    format: date-time
+required:
+  - username
+  - rolename
+  - expirydatetime

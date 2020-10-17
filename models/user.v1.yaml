@@ -1,10 +1,11 @@
 type: object
 title: user
-example: jwootton
-description: Database users
+example: fflintstone
+description: 'Database users. If validrole is set, then the user can only assume that role'
 x-examples:
   Peter Parker:
     username: pparker
+    validrole: sre
   Bruce Wayne:
     username: brucewayne
   James Bond:
@@ -15,5 +16,8 @@ properties:
     example: 'ckent, borisj, fred.flintstone, dave.spart@socialistparty.org'
     pattern: .*
     minLength: 1
+    description: ''
+  validrole:
+    $ref: ./role.v1.yaml
 required:
   - username

@@ -24,8 +24,7 @@ x-examples:
     order: '3'
 properties:
   rolename:
-    type: string
-    example: dba
+    $ref: ./role.v1.yaml
   permission:
     type: string
     example: select
