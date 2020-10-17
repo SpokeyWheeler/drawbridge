@@ -1,0 +1,55 @@
+title: permission
+type: object
+description: Define permissions given to a role
+x-examples:
+  Grant all permissions on all databases to dba:
+    rolename: dba
+    action: grant
+    permission: all
+    databasename: all
+    tablename: all
+    columnname: all
+    order: '1'
+  Revoke all from salaries table from dba:
+    rolename: dba
+    permission: all
+    targetobject: salaries
+    action: revoke
+    order: '2'
+  Grant select on column employee_num in salaries table to DBA:
+    rolename: dba
+    permission: select
+    targetobject: hr.salaries.employee_num
+    action: grant
+    order: '3'
+properties:
+  rolename:
+    type: string
+    example: dba
+  permission:
+    type: string
+    example: select
+  targetobject:
+    type: string
+  action:
+    type: string
+    default: grant
+    enum:
+      - grant
+      - revoke
+    pattern: .*
+    minLength: 5
+    maxLength: 6
+  order:
+    type: integer
+    default: '1'
+    enum:
+      - '1'
+      - '2'
+      - '3'
+    example: '2'
+required:
+  - rolename
+  - permission
+  - targetobject
+  - action

@@ -1,0 +1,19 @@
+type: object
+title: user
+example: jwootton
+description: Database users
+x-examples:
+  Peter Parker:
+    username: pparker
+  Bruce Wayne:
+    username: brucewayne
+  James Bond:
+    username: jamesb
+properties:
+  username:
+    type: string
+    example: 'ckent, borisj, fred.flintstone, dave.spart@socialistparty.org'
+    pattern: .*
+    minLength: 1
+required:
+  - username

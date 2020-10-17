@@ -1,0 +1,18 @@
+title: role
+type: object
+x-examples:
+  DBA:
+    rolename: dba
+  SRE:
+    rolename: sre
+  Support Desk:
+    rolename: supportdesk
+description: 'Permissions are assigned to roles, roles are assigned to users'
+properties:
+  rolename:
+    type: string
+    example: supportdesk
+    pattern: .*
+    minLength: 1
+required:
+  - rolename
