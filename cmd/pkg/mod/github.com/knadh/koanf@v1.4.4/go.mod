@@ -3,7 +3,7 @@ module github.com/knadh/koanf
 go 1.12
 
 require (
-	github.com/aws/aws-sdk-go-v2 v1.9.2
+	github.com/aws/aws-sdk-go-v2 v1.17.3
 	github.com/aws/aws-sdk-go-v2/config v1.8.3
 	github.com/aws/aws-sdk-go-v2/credentials v1.4.3
 	github.com/aws/aws-sdk-go-v2/service/appconfig v1.4.2
