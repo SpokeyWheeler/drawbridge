@@ -9,7 +9,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/appconfig v1.4.2
 	github.com/aws/aws-sdk-go-v2/service/sts v1.17.7
 	github.com/fatih/structs v1.1.0
-	github.com/fsnotify/fsnotify v1.4.9
+	github.com/fsnotify/fsnotify v1.6.0
 	github.com/hashicorp/consul/api v1.13.0
 	github.com/hashicorp/hcl v1.0.0
 	github.com/hashicorp/vault/api v1.0.4
