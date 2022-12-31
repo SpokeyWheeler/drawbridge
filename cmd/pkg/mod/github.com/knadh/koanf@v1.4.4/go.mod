@@ -13,7 +13,7 @@ require (
 	github.com/hashicorp/consul/api v1.18.0
 	github.com/hashicorp/hcl v1.0.0
 	github.com/hashicorp/vault/api v1.8.2
-	github.com/hjson/hjson-go/v4 v4.0.0
+	github.com/hjson/hjson-go/v4 v4.3.0
 	github.com/joho/godotenv v1.3.0
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/mitchellh/mapstructure v1.5.0
