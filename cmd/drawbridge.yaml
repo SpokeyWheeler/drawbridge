@@ -1,0 +1,19 @@
+---
+roles:
+  role1:
+    name: readonly
+    members:
+      - brendan
+      - antony
+    grants:
+      name: select
+      objects:
+        all
+    revokes:
+      name: all
+      objects:
+        object1:
+          database: foo
+          schema: public
+          table: ding
+          column: salary

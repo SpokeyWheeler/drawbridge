@@ -1,0 +1,105 @@
+Privilege	Abbreviation	Applicable Object Types
+SELECT		r (“read”)	LARGE OBJECT, SEQUENCE, TABLE (and table-like objects), table column
+INSERT		a (“append”)	TABLE, table column
+UPDATE		w (“write”)	LARGE OBJECT, SEQUENCE, TABLE, table column
+DELETE		d		TABLE
+TRUNCATE	D		TABLE
+REFERENCES	x		TABLE, table column
+TRIGGER		t		TABLE
+CREATE		C		DATABASE, SCHEMA, TABLESPACE
+CONNECT		c		DATABASE
+TEMPORARY	T		DATABASE
+EXECUTE		X		FUNCTION, PROCEDURE
+USAGE		U		DOMAIN, FOREIGN DATA WRAPPER, FOREIGN SERVER, LANGUAGE, SCHEMA, SEQUENCE, TYPE
+SET		s		PARAMETER
+ALTER SYSTEM	A		PARAMETER
+
+Object Type		All Privileges	Default PUBLIC Privileges	psql Command
+DATABASE		CTc		Tc				\l
+DOMAIN			U		U				\dD+
+FUNCTION or PROCEDURE	X		X				\df+
+FOREIGN DATA WRAPPER	U		none				\dew+
+FOREIGN SERVER		U		none				\des+
+LANGUAGE		U		U				\dL+
+LARGE OBJECT		rw		none				\dl+
+PARAMETER		sA		none				\dconfig+
+SCHEMA			UC		none				\dn+
+SEQUENCE		rwU		none				\dp
+TABLE (and table-like)	arwdDxt		none				\dp
+Table column		arwx		none				\dp
+TABLESPACE		C		none				\db+
+TYPE			U		U				\dT+
+
+
+Privilege	Levels
+ALL		Database, Schema, Table, Type
+CREATE		Database, Schema, Table
+DROP		Database, Table
+GRANT		Database, Schema, Table, Type
+CONNECT		Database
+SELECT		Table
+INSERT		Table
+DELETE		Table
+UPDATE		Table
+USAGE		Schema, Type
+ZONECONFIG	Database, Table
+
+Table 1. SYSTABAUTH table column descriptions
+Column	Type		Explanation
+grantor	VARCHAR(32)	Name of the grantor of privilege
+grantee	VARCHAR(32)	Name of the grantee of privilege
+tabid	INTEGER		Value from systables.tabid for database object
+tabauth	CHAR(9) CHAR(8)	Pattern that specifies privileges on the table, view, synonym, or sequence:
+				s or S = Select
+				u or U = Update
+				* = Column-level privilege
+				i or I = Insert
+				d or D = Delete
+				x or X = Index
+				a or A = Alter
+				r or R = References
+				n or N = Under privilege
+
+SYSCOLAUTH
+Column 	Type	 	Explanation
+grantor	VARCHAR(32)	Authorization identifier of the grantor
+grantee	VARCHAR(32)	Authorization identifier of the grantee
+tabid	INTEGER		Code uniquely identifying the table
+colno	SMALLINT	Column number within the table
+colauth	CHAR(3)		3-byte pattern specifying column privileges: s or S = Select, u or U = Update, r or R = References
+
+Table 1. SYSLANGAUTH table column descriptions
+Column	Type		Explanation
+grantor	VARCHAR(32)	Name of the grantor of the language authorization
+grantee	VARCHAR(32)	Name of the grantee of the language authorization
+langid	INTEGER		Identifying code of language in sysroutinelangs table
+langauth	CHAR(1)	The language authorization:
+				u = Usage privilege granted
+				U = Usage privilege granted WITH GRANT OPTION
+
+Table 1. SYSPROCAUTH table column descriptions
+Column		Type		Explanation
+grantor		VARCHAR(32)	Name of grantor of privileges to access the routine
+grantee		VARCHAR(32)	Name of grantee of privileges to access the routine
+procid		INTEGER		Unique identifying code of the routine
+procauth	CHAR(1)		Type of privilege granted on the routine:
+					e = Execute privilege on routine
+					E = Execute privilege WITH GRANT OPTION
+
+Table 1. SYSROLEAUTH table column descriptions
+Column		Type		Explanation
+rolename	VARCHAR(32)	Name of the role
+grantee		VARCHAR(32)	Name of the grantee of the role
+is_grantable	CHAR(1)		Specifies whether the role is grantable:
+					Y = Grantable
+					N = Not grantable
+
+SYSXTDTYPEAUTH
+Column	Type		Explanation
+grantor	VARCHAR(32)	Name of grantor of privilege
+grantee	VARCHAR(32)	Name of grantee of privilege
+type	INTEGER		Code identifying the UDT
+auth	CHAR(2)		Code identifying privileges on the UDT:
+				or N = Under privilege
+				or U = Usage privilege
+

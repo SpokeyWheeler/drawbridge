@@ -1,0 +1,89 @@
+---
+separator:
+  - dev
+  - feat
+  - rel
+
+role:
+  - application
+  - dba
+  - privileged
+  - readonly
+  - schema
+
+permission:
+  - database:
+      - connect
+      - create
+      - temporary
+      - usage
+  - function:
+      - execute
+  - table:
+      - delete
+      - insert
+      - references
+      - select
+      - trigger
+      - truncate
+      - update
+
+grant:
+  - connect:
+      - application
+      - dba
+      - privileged
+      - readonly
+      - schema
+  - create:
+      - dba
+      - schema
+  - delete:
+      - application
+      - dba
+      - privileged
+      - schema
+  - execute:
+      - application
+      - dba
+      - privileged
+      - readonly
+      - schema
+  - insert:
+      - application
+      - dba
+      - privileged
+      - schema
+  - references:
+      - dba
+      - schema
+  - select:
+      - application
+      - dba
+      - privileged
+      - readonly
+      - schema
+  - trigger:
+      - dba
+      - schema
+  - truncate:
+      - dba
+      - schema
+  - update:
+      - application
+      - dba
+      - privileged
+      - schema
+
+custom:
+  - hr:
+      - public:
+          - employee_salary:
+              - monthly_gross:
+                  - privileged
+
+  - hr:
+      - public:
+          - employee_master:
+              - privileged
+              - dba
