@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-sdk-go-v2 v1.17.6
 	github.com/aws/aws-sdk-go-v2/config v1.18.18
 	github.com/aws/aws-sdk-go-v2/credentials v1.13.17
-	github.com/aws/aws-sdk-go-v2/service/appconfig v1.15.0
+	github.com/aws/aws-sdk-go-v2/service/appconfig v1.17.4
 	github.com/aws/aws-sdk-go-v2/service/sts v1.18.6
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.6.0
