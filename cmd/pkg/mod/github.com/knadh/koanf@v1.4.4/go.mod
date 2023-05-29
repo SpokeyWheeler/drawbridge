@@ -5,9 +5,9 @@ go 1.19
 require (
 	github.com/aws/aws-sdk-go-v2 v1.18.0
 	github.com/aws/aws-sdk-go-v2/config v1.18.23
-	github.com/aws/aws-sdk-go-v2/credentials v1.13.22
+	github.com/aws/aws-sdk-go-v2/credentials v1.13.24
 	github.com/aws/aws-sdk-go-v2/service/appconfig v1.17.9
-	github.com/aws/aws-sdk-go-v2/service/sts v1.18.11
+	github.com/aws/aws-sdk-go-v2/service/sts v1.19.0
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.6.0
 	github.com/hashicorp/consul/api v1.20.0
@@ -22,7 +22,7 @@ require (
 	github.com/rhnvrm/simples3 v0.8.3
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.3
-	go.etcd.io/etcd/client/v3 v3.5.8
+	go.etcd.io/etcd/client/v3 v3.5.9
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -73,8 +73,8 @@ require (
 	github.com/pierrec/lz4 v2.5.2+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/ryanuber/go-glob v1.0.0 // indirect
-	go.etcd.io/etcd/api/v3 v3.5.8 // indirect
-	go.etcd.io/etcd/client/pkg/v3 v3.5.8 // indirect
+	go.etcd.io/etcd/api/v3 v3.5.9 // indirect
+	go.etcd.io/etcd/client/pkg/v3 v3.5.9 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.17.0 // indirect
