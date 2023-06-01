@@ -10,7 +10,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sts v1.19.0
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.6.0
-	github.com/hashicorp/consul/api v1.20.0
+	github.com/hashicorp/consul/api v1.21.0
 	github.com/hashicorp/hcl v1.0.0
 	github.com/hashicorp/vault/api v1.9.2
 	github.com/hjson/hjson-go/v4 v4.3.0
