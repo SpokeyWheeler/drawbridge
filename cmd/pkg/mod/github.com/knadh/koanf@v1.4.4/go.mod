@@ -11,15 +11,15 @@ require (
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.6.0
 	github.com/hashicorp/consul/api v1.21.0
-	github.com/hashicorp/hcl/v2 v2.17.0
-	github.com/hashicorp/hcl/v2 v2.17.0
+	github.com/hashicorp/hcl v1.0.0
+	github.com/hashicorp/hcl/v2 v2.18.0
 	github.com/hashicorp/vault/api v1.9.2
 	github.com/hjson/hjson-go/v4 v4.3.0
 	github.com/joho/godotenv v1.5.1
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/npillmayer/nestext v0.1.3
-	github.com/pelletier/go-toml/v2 v2.0.8
+	github.com/pelletier/go-toml v1.9.5
 	github.com/pelletier/go-toml/v2 v2.0.8
 	github.com/rhnvrm/simples3 v0.8.3
 	github.com/spf13/pflag v1.0.5
@@ -84,7 +84,7 @@ require (
 	golang.org/x/crypto v0.6.0 // indirect
 	golang.org/x/net v0.7.0 // indirect
 	golang.org/x/sys v0.5.0 // indirect
-	golang.org/x/text v0.7.0 // indirect
+	golang.org/x/text v0.11.0 // indirect
 	golang.org/x/time v0.0.0-20200416051211-89c76fbcd5d1 // indirect
 	google.golang.org/genproto v0.0.0-20210602131652-f16073e35f0c // indirect
 	google.golang.org/grpc v1.41.0 // indirect
