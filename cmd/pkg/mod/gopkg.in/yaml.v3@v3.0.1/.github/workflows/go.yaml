@@ -31,7 +31,7 @@ jobs:
         path: ${{ github.workspace }}/go/src/gopkg.in/yaml.v3
     - name: Set up Go ${{ matrix.go }}
       if: matrix.go != 'tip'
-      uses: actions/setup-go@v2
+      uses: actions/setup-go@v5
       with:
         go-version: ${{ matrix.go }}
         stable: false
