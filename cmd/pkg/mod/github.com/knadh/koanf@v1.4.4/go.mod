@@ -14,7 +14,7 @@ require (
 	github.com/hashicorp/hcl v1.0.0
 	github.com/hashicorp/hcl/v2 v2.19.1
 	github.com/hashicorp/vault/api v1.10.0
-	github.com/hjson/hjson-go/v4 v4.3.0
+	github.com/hjson/hjson-go/v4 v4.4.0
 	github.com/joho/godotenv v1.5.1
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/mitchellh/mapstructure v1.5.0
