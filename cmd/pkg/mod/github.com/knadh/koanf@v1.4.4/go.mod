@@ -1,6 +1,8 @@
 module github.com/knadh/koanf
 
-go 1.19
+go 1.21.0
+
+toolchain go1.23.1
 
 require (
 	github.com/aws/aws-sdk-go-v2 v1.18.1
@@ -11,7 +13,7 @@ require (
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.7.0
 	github.com/hashicorp/consul/api v1.21.0
-	github.com/hashicorp/hcl/v2 v2.20.0
+	github.com/hashicorp/hcl v1.0.0
 	github.com/hashicorp/hcl/v2 v2.20.0
 	github.com/hashicorp/vault/api v1.11.0
 	github.com/hjson/hjson-go/v4 v4.4.0
@@ -19,8 +21,8 @@ require (
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/npillmayer/nestext v0.1.3
-	github.com/pelletier/go-toml/v2 v2.1.1
-	github.com/pelletier/go-toml/v2 v2.1.1
+	github.com/pelletier/go-toml v1.9.5
+	github.com/pelletier/go-toml/v2 v2.2.3
 	github.com/rhnvrm/simples3 v0.8.3
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.9.0
