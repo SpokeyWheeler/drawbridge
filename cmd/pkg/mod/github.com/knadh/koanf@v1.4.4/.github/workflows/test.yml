@@ -9,14 +9,14 @@ jobs:
       matrix:
         go: [ '1.14', '1.15', '1.16' ]
 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     name: Go ${{ matrix.go }} Tests
     steps:
       - uses: actions/checkout@v2
       
       - name: Setup Go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v5
         with:
           go-version: ${{ matrix.go }}
 
