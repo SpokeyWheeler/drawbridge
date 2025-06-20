@@ -21,7 +21,7 @@ require (
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/npillmayer/nestext v0.1.3
-	github.com/pelletier/go-toml v1.9.5
+	github.com/pelletier/go-toml/v2 v2.2.4
 	github.com/pelletier/go-toml/v2 v2.2.4
 	github.com/rhnvrm/simples3 v0.9.0
 	github.com/spf13/pflag v1.0.6
