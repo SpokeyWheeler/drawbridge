@@ -13,7 +13,7 @@ require (
 	github.com/fatih/structs v1.1.0
 	github.com/fsnotify/fsnotify v1.9.0
 	github.com/hashicorp/consul/api v1.32.1
-	github.com/hashicorp/hcl/v2 v2.23.0
+	github.com/hashicorp/hcl v1.0.1-vault-7
 	github.com/hashicorp/hcl/v2 v2.23.0
 	github.com/hashicorp/vault/api v1.20.0
 	github.com/hjson/hjson-go/v4 v4.5.0
@@ -21,10 +21,10 @@ require (
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/npillmayer/nestext v0.1.3
-	github.com/pelletier/go-toml/v2 v2.2.4
+	github.com/pelletier/go-toml v1.9.5
 	github.com/pelletier/go-toml/v2 v2.2.4
 	github.com/rhnvrm/simples3 v0.9.1
-	github.com/spf13/pflag v1.0.6
+	github.com/spf13/pflag v1.0.10
 	github.com/stretchr/testify v1.10.0
 	go.etcd.io/etcd/client/v3 v3.6.1
 	gopkg.in/yaml.v3 v3.0.1
